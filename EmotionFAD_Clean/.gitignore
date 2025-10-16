@@ -1,0 +1,107 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Flask
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Models (DeepFace downloads these - can be large!)
+.deepface/
+weights/
+models/
+*.h5
+*.pb
+*.pth
+*.onnx
+*.caffemodel
+
+# Large data files
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Video/Image files (if any)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if any)
+node_modules/
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Cache directories
+.cache/
+__pycache__/
+.pytest_cache/
+
+# Large log files
+*.log
+
+# Backup files
+*.bak
+*.backup
+*~

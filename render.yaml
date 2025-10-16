@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: emotionfad
+    env: docker
+    plan: free
+    region: oregon
+    numInstances: 1
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "true"
+      - key: FLASK_APP
+        value: "app_emotion.py"
+      - key: FLASK_ENV
+        value: "production"
+      - key: PYTHONDONTWRITEBYTECODE
+        value: "1"
+    build:
+      dockerfile: Dockerfile
+      target: production
+      args:
+        - PYTHON_VERSION=3.9.0
